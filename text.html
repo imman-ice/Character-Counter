@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Character Counter</title>
+</head>
+
+<body>
+
+<h3>Type your message (200 characters max)</h3>
+
+<textarea id="text" rows="5" cols="40" maxlength="200"></textarea>
+
+<p id="result">0 / 200 characters</p>
+
+<script>
+
+var textarea = document.getElementById("text");
+var result = document.getElementById("result");
+
+textarea.addEventListener("input", function() {
+
+    var length = textarea.value.length;
+
+    result.innerHTML = length + " / 200 characters";
+
+});
+
+</script>
+
+</body>
+</html>
